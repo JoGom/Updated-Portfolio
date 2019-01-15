@@ -1,8 +1,5 @@
 body{
-    background: url(../images/hypnotize.png);
-}
-p:last-child{
-    margin-bottom: 0;
+    background: black;
 }
 h1,
 h2,
