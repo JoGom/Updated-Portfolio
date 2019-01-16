@@ -39,12 +39,25 @@ body{
     border-radius: 50%;
 }
 .aboutInfo{
-    margin: 10px -20px 15px 15px;
+    margin: 10px -20px 50px 15px;
     padding: 10px;
-    float: left;
+    padding-bottom: 25px;
+    /* float: left; */
     border-top-left-radius: 150px;
     border-bottom-left-radius: 150px;
     background: linear-gradient(-45deg, rgb(241, 213, 136), rgb(255, 135, 56), #23A6D5, rgb(52, 255, 208));
+	background-size: 250% 250%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}
+.techInfo{
+    margin: 10px 15px 15px -20px;
+    padding: 10px;
+    /* float: left; */
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    background: linear-gradient(-45deg, rgb(241, 213, 136), rgb(73, 207, 178), rgb(99, 44, 170), rgb(52, 255, 208));
 	background-size: 250% 250%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
@@ -87,6 +100,8 @@ body{
     color: rgb(60, 17, 109);
 }
 .aboutSect h2{
+    font-size: 60px;
+    color: #ffffff;
     margin-bottom: 25px;
     text-align: center;
 }
