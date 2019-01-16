@@ -106,7 +106,6 @@ body{
     text-align: center;
 }
 section{
-    display: inline-block;
     padding: 20px;
     min-height: 100vh;
 }
@@ -117,7 +116,13 @@ section{
 	-moz-animation: Gradient 15s ease infinite;
 	animation: Gradient 15s ease infinite;
 }
+.project{
 
+    padding: 5px;
+}
+.project img{
+    margin: 10px;
+}
 @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
