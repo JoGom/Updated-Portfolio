@@ -1,128 +1,112 @@
-body{
-    background: rgb(73, 70, 70);
-}
-#mainHeader{
-    color: #ffffff;
-    margin-bottom: 30px;
-    font-weight: 700;
-    line-height: 90px;
-    height: 100px;
+body, html{
+    height: 100%;
 
 }
-#btnCont{
-    margin: 0 auto;
+
+body{
+    background: linear-gradient(#C244FF, #2EE6A8);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-#btnCont button{
-    background: none;
-    border: none;
+
+.mylogo{
+    height: 35px;
 }
-/* #btnCont button{
-    margin: 0 8px;
-} */
-  h1 {
-    font-size: 60px;
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-  }
-/* #mainCont{
-  margin-top: 40px;  
-  font-size: 18px;
-  line-height: 34px;
-  color: #777777;
-  min-height: calc(100vh - 70px);
-  height: 500px;
-} */
-.profPic{
-   
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+.nav > li > a{
+    font-size: 26px;
+    font-weight: bolder;
+    color: #000000;
+    padding-top: 0px;
+    padding-bottom: 0px; 
 }
-.aboutInfo{
-    margin: 10px -20px 50px 15px;
-    padding: 10px;
-    padding-bottom: 25px;
-    /* float: left; */
-    border-top-left-radius: 150px;
-    border-bottom-left-radius: 150px;
-    background: linear-gradient(-45deg, rgb(241, 213, 136), rgb(255, 135, 56), #23A6D5, rgb(52, 255, 208));
-	background-size: 250% 250%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-    animation: Gradient 15s ease infinite;
+#comsvg{
+    height: 500px;
 }
-.techInfo{
-    margin: 10px 15px 15px -20px;
-    padding: 10px;
-    /* float: left; */
-    border-top-right-radius: 150px;
-    border-bottom-right-radius: 150px;
-    background: linear-gradient(-45deg, rgb(241, 213, 136), rgb(73, 207, 178), rgb(99, 44, 170), rgb(52, 255, 208));
-	background-size: 250% 250%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-    animation: Gradient 15s ease infinite;
-}
-.myInfo{
-    font-size: 25px;
-    color: white;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.col-sm-3{
-    padding-left:0;
-}
+
 #landing{
-    min-height: 100vh;
-    background: linear-gradient(-45deg, rgb(241, 213, 136), rgb(255, 135, 56), #23A6D5, rgb(52, 255, 208));
+    height: calc(100vh - 61.5px);
+    background: linear-gradient(-45deg, rgb(52, 255, 208), #C244FF, rgb(73, 207, 178), rgb(241, 213, 136) );
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
     animation: Gradient 15s ease infinite;
     padding-bottom: 1px;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    grid-template-columns: 45% 65%;
 }
 #textBox{
- 
     font-size: 35px;
     font-weight: 800;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    color: #000000;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: end;
+}
+#textBox > div{
+    grid-row: 2 / 3;
 }
 #textBox p{
     margin:0;
 }
 #textBox span{
-    color: rgb(60, 17, 109);
-}
-.aboutSect h2{
-    font-size: 60px;
     color: #ffffff;
-    margin-bottom: 25px;
+}
+#graphicBox{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+#graphic{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+#comsvg{
+    grid-column: 2 / 3;
+    z-index: 10;
+}
+#slant{
+    width: 1000px;
+    height: 100%;
+    overflow: hidden;
+    background: #000000;
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+}
+h2{
+    color: #000000;
+    font-weight: bolder;
+    margin: 80px auto 60px;
+    padding: 10px;
+    border: black solid 5px;
+    width: fit-content;
+}
+#about{
     text-align: center;
+    color: #ffffff;
+    font-size: 26px;
+    background: #000000;
+    margin-bottom: 60px;
+    padding-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    grid-row-gap: 15px;
 }
-section{
-    padding: 20px;
-    min-height: 100vh;
-}
-.portfolioSect{
-    background: linear-gradient(-45deg, rgb(241, 213, 136), rgb(73, 207, 178), rgb(99, 44, 170), rgb(52, 255, 208));
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
-}
-.project{
 
-    padding: 5px;
+.profPic{
+    margin-top: 20px;
+    width:200px;
+    height: 200px;
+    background: #ffffff;
+    border-radius: 50%;
 }
-.project img{
-    margin: 10px;
-}
+
+
 @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
@@ -165,3 +149,5 @@ section{
     .backBox h2{font-size: 2.5em; margin-right: 15px;}
     .profPic{width:150px; height:150px; margin: 0 auto;}
     }
+
+    
