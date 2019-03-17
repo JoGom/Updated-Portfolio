@@ -4,9 +4,8 @@ body, html{
 }
 
 body{
-    background: linear-gradient(#C244FF, #2EE6A8);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: #000000;
+
 }
 
 .mylogo{
@@ -78,18 +77,26 @@ body{
 }
 h2{
     color: #000000;
-    font-weight: bolder;
-    margin: 80px auto 60px;
-    padding: 10px;
+    font-weight: bold;
+    margin: 10px auto;
+    padding: 1px 10px;
     border: black solid 5px;
     width: fit-content;
+}
+#main-container{
+    overflow: hidden;
+    background: linear-gradient(#C244FF, #2EE6A8);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0px;
+    margin-top: 100px;
 }
 #about{
     text-align: center;
     color: #ffffff;
     font-size: 26px;
-    background: #000000;
-    margin-bottom: 60px;
+    background: #2B2B2B;
+    min-height: 700px;
     padding-top: 30px;
     width: 100%;
     display: grid;
