@@ -18,23 +18,23 @@
 <body>
 
     <nav class="navbar sticky-top navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand nav-item" data-name="landing" href="#">
             <img class="mylogo" src="assets/images/Group 3.svg">
         </a>
         <ul class="nav">
-            <li class="nav-item">
+            <li class="nav-item" data-name="about">
                 <a class="nav-link" href="#">About</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-name="portfolio">
                 <a class="nav-link" href="#">Portfolio</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-name="contact">
                 <a class="nav-link" href="#">Contact</a>
             </li>
         </ul>
     </nav>
 
-    <div id="landing">
+    <div id="landingSect">
         <div id="textBox">
             <div>
             <p>Hello, I'm <span>Jorge Gomez</span>.</p>
@@ -51,7 +51,7 @@
 
     <div class="container" id="main-container">
         
-        <h2>ABOUT</h2>
+        <h2 id="aboutSect">ABOUT</h2>
         <div class="content-container" id="about">
             <div >
                 <div class="profPic"></div>
@@ -67,7 +67,7 @@
             </div>
         </div>
 
-        <h2>PORTFOLIO</h2>
+        <h2 id="portfolioSect">PORTFOLIO</h2>
         <div class="content-container" id="portfolio">
             <div class="project">
                 fill
@@ -98,25 +98,14 @@
             </div>
         </div>
 
-        <h2>CONTACT</h2>
+        <h2 id="contactSect">CONTACT</h2>
         <div class="content-container" id="contact">
-            <form>
-                    <ul>
-                        <li>
-                            <label>Name</label><br>
-                            <input type="text" name="name" placeholder="John Smith" id="name">
-                        </li>
-                        <li>
-                            <label>Email</label><br>
-                            <input type="email" name="email" placeholder="example@gmail.com" id="email">
-                        </li>
-                        <li>
-                            <label>Message</label><br>
-                            <textarea name="Message" id="message"></textarea>
-                        </li>
-                    </ul>
-                    <input type="Submit">
-                </form>
+            <form>      
+                <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+                <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                <input type="submit" value="SUBMIT"/>
+            </form>
         </div>
 
     </div>

@@ -22,7 +22,7 @@ body{
     height: 500px;
 }
 
-#landing{
+#landingSect{
     height: calc(100vh - 61.5px);
     background: linear-gradient(-45deg, rgb(52, 255, 208), #C244FF, rgb(73, 207, 178), rgb(241, 213, 136) );
 	background-size: 400% 400%;
@@ -90,9 +90,9 @@ h2{
     background-attachment: fixed;
     padding: 0px;
     margin-top: 100px;
+    margin-bottom: 200px;
 }
 .content-container{
-    text-align: center;
     color: #ffffff;
     font-size: 26px;
     background: #2B2B2B;
@@ -102,13 +102,14 @@ h2{
     
 }
 #about{
+    text-align: center;
     display: grid;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     grid-row-gap: 15px;
 }
 .profPic{
-    margin-top: 20px;
+    margin-top: 50px;
     width:200px;
     height: 200px;
     background: #ffffff;
@@ -116,6 +117,7 @@ h2{
 }
 #portfolio{
     display: grid;
+    padding-top: 80px;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     grid-row-gap: 10px;
@@ -126,9 +128,45 @@ h2{
     background: #ffffff;
     height: 400px;
 }
-#contact{
-    
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-weight:500;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #a268ec;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
 }
+
+.feedback-input:focus { border:2px solid #4ec3bb; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+    background: none;
+  width: 100%;
+  border: 2px solid #a268ec;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#4ec3bb; }
 
 
 @-webkit-keyframes Gradient {
