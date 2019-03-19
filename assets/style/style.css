@@ -45,7 +45,6 @@ body{
     justify-items: end;
 }
 #textBox > div{
-    overflow: hidden;
     grid-row: 2 / 3;
 }
 #textBox p{
@@ -70,6 +69,7 @@ body{
 #slant{
     width: 1000px;
     height: 100%;
+    margin-bottom: -3px;
     overflow: hidden;
     background: #000000;
     -webkit-transform: skew(-30deg);
